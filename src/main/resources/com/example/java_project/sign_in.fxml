@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project.SignInController">
+   <children>
+      <Label layoutX="56.0" layoutY="144.0" prefHeight="17.0" prefWidth="43.0" text="Email" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="120.0" layoutY="140.0" />
+      <Label layoutX="50.0" layoutY="192.0" prefHeight="17.0" prefWidth="54.0" text="Password" textAlignment="CENTER" />
+      <PasswordField fx:id="mdp" layoutX="120.0" layoutY="188.0" />
+      <Button layoutX="120.0" layoutY="236.0" mnemonicParsing="false" onAction="#sign_in" text="connect">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="219.0" layoutY="236.0" mnemonicParsing="false" onAction="#cancel" text="cancel">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="271.0" fitWidth="220.0" layoutX="351.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@items/sign_in.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="97.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to your account !">
+         <font>
+            <Font name="Comic Sans MS" size="33.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
